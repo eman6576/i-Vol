@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		88FF749B1D43D0040026C10E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF749A1D43D0040026C10E /* AppDelegate.swift */; };
-		88FF749D1D43D0040026C10E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF749C1D43D0040026C10E /* ViewController.swift */; };
+		88FF749D1D43D0040026C10E /* IVolLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF749C1D43D0040026C10E /* IVolLoginViewController.swift */; };
 		88FF74A01D43D0040026C10E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FF749E1D43D0040026C10E /* Main.storyboard */; };
 		88FF74A21D43D0040026C10E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FF74A11D43D0040026C10E /* Assets.xcassets */; };
 		88FF74A51D43D0040026C10E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FF74A31D43D0040026C10E /* LaunchScreen.storyboard */; };
+		88FF74B41D43D5060026C10E /* IVolBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF74B31D43D5060026C10E /* IVolBaseViewController.swift */; };
+		88FF74B91D43D6C90026C10E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF74B81D43D6C90026C10E /* User.swift */; };
+		88FF74BB1D43DAD90026C10E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF74BA1D43DAD90026C10E /* Event.swift */; };
+		88FF74BD1D43DD0E0026C10E /* NonProfitGym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF74BC1D43DD0E0026C10E /* NonProfitGym.swift */; };
+		88FF74BF1D43E1EA0026C10E /* Clan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF74BE1D43E1EA0026C10E /* Clan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		88FF74971D43D0040026C10E /* i-Vol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "i-Vol.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FF749A1D43D0040026C10E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88FF749C1D43D0040026C10E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
+		88FF749C1D43D0040026C10E /* IVolLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IVolLoginViewController.swift; path = Controller/IVolLoginViewController.swift; sourceTree = "<group>"; };
 		88FF749F1D43D0040026C10E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88FF74A11D43D0040026C10E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88FF74A41D43D0040026C10E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88FF74A61D43D0040026C10E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SupportingFiles/Info.plist; sourceTree = "<group>"; };
+		88FF74B31D43D5060026C10E /* IVolBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IVolBaseViewController.swift; path = Controller/IVolBaseViewController.swift; sourceTree = "<group>"; };
+		88FF74B81D43D6C90026C10E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
+		88FF74BA1D43DAD90026C10E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Model/Event.swift; sourceTree = "<group>"; };
+		88FF74BC1D43DD0E0026C10E /* NonProfitGym.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NonProfitGym.swift; path = Model/NonProfitGym.swift; sourceTree = "<group>"; };
+		88FF74BE1D43E1EA0026C10E /* Clan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Clan.swift; path = Model/Clan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,10 @@
 		88FF74AC1D43D01D0026C10E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				88FF74B81D43D6C90026C10E /* User.swift */,
+				88FF74BA1D43DAD90026C10E /* Event.swift */,
+				88FF74BC1D43DD0E0026C10E /* NonProfitGym.swift */,
+				88FF74BE1D43E1EA0026C10E /* Clan.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -77,7 +91,6 @@
 		88FF74AD1D43D0230026C10E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				88FF749C1D43D0040026C10E /* ViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -85,6 +98,8 @@
 		88FF74AE1D43D0280026C10E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				88FF749C1D43D0040026C10E /* IVolLoginViewController.swift */,
+				88FF74B31D43D5060026C10E /* IVolBaseViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -101,6 +116,7 @@
 		88FF74B01D43D0410026C10E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				88FF74B51D43D5F00026C10E /* Singletons */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -118,6 +134,13 @@
 				88FF74A61D43D0040026C10E /* Info.plist */,
 			);
 			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		88FF74B51D43D5F00026C10E /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Singletons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,8 +214,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88FF749D1D43D0040026C10E /* ViewController.swift in Sources */,
+				88FF74B91D43D6C90026C10E /* User.swift in Sources */,
+				88FF74BD1D43DD0E0026C10E /* NonProfitGym.swift in Sources */,
+				88FF749D1D43D0040026C10E /* IVolLoginViewController.swift in Sources */,
+				88FF74BF1D43E1EA0026C10E /* Clan.swift in Sources */,
 				88FF749B1D43D0040026C10E /* AppDelegate.swift in Sources */,
+				88FF74B41D43D5060026C10E /* IVolBaseViewController.swift in Sources */,
+				88FF74BB1D43DAD90026C10E /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
