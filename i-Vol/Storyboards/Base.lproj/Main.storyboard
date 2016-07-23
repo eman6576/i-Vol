@@ -39,7 +39,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="qur-ff-ZdO"/>
                     <connections>
-                        <segue destination="dH5-eP-t1f" kind="show" id="nuo-pc-bb3"/>
+                        <segue destination="h36-5k-Get" kind="presentation" modalTransitionStyle="coverVertical" id="nuo-pc-bb3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VtP-6i-pGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -57,12 +57,24 @@
                     <view key="view" contentMode="scaleToFill" id="kYG-cs-pve">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="CRh-DD-2Cr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CRh-DD-2Cr" secondAttribute="trailing" id="9HD-yk-AsD"/>
+                            <constraint firstItem="CRh-DD-2Cr" firstAttribute="leading" secondItem="kYG-cs-pve" secondAttribute="leading" id="LkX-Fm-wmh"/>
+                            <constraint firstItem="mvK-xw-wff" firstAttribute="top" secondItem="CRh-DD-2Cr" secondAttribute="bottom" id="d00-eP-0kx"/>
+                            <constraint firstItem="CRh-DD-2Cr" firstAttribute="top" secondItem="kYG-cs-pve" secondAttribute="top" id="yAT-wg-dyi"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="B7C-2o-fQM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hK0-qQ-IoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2462" y="167"/>
+            <point key="canvasLocation" x="3274" y="167"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="LwM-b2-ofx">
@@ -120,5 +132,26 @@
             </objects>
             <point key="canvasLocation" x="860" y="898"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IkS-Zw-DdR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h36-5k-Get" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="94o-s3-NYq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dH5-eP-t1f" kind="relationship" relationship="rootViewController" id="zSc-OP-DTc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rt7-AR-CYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2462" y="167"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="background" width="2000" height="1000"/>
+    </resources>
 </document>

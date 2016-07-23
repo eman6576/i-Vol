@@ -17,6 +17,8 @@
 		88FF74BB1D43DAD90026C10E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF74BA1D43DAD90026C10E /* Event.swift */; };
 		88FF74BD1D43DD0E0026C10E /* NonProfitGym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF74BC1D43DD0E0026C10E /* NonProfitGym.swift */; };
 		88FF74BF1D43E1EA0026C10E /* Clan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF74BE1D43E1EA0026C10E /* Clan.swift */; };
+		88FF74C21D43EE140026C10E /* coiny-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88FF74C01D43EE140026C10E /* coiny-regular.ttf */; };
+		88FF74C31D43EE140026C10E /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 88FF74C11D43EE140026C10E /* SIL Open Font License.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		88FF74BA1D43DAD90026C10E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Model/Event.swift; sourceTree = "<group>"; };
 		88FF74BC1D43DD0E0026C10E /* NonProfitGym.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NonProfitGym.swift; path = Model/NonProfitGym.swift; sourceTree = "<group>"; };
 		88FF74BE1D43E1EA0026C10E /* Clan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Clan.swift; path = Model/Clan.swift; sourceTree = "<group>"; };
+		88FF74C01D43EE140026C10E /* coiny-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "coiny-regular.ttf"; path = "../../../AppAssets/i-Vol/fonts/coiny-regular.ttf"; sourceTree = "<group>"; };
+		88FF74C11D43EE140026C10E /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "SIL Open Font License.txt"; path = "../../../AppAssets/i-Vol/fonts/SIL Open Font License.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 		88FF74B11D43D0590026C10E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				88FF74C01D43EE140026C10E /* coiny-regular.ttf */,
+				88FF74C11D43EE140026C10E /* SIL Open Font License.txt */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -202,7 +208,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				88FF74A51D43D0040026C10E /* LaunchScreen.storyboard in Resources */,
+				88FF74C31D43EE140026C10E /* SIL Open Font License.txt in Resources */,
 				88FF74A21D43D0040026C10E /* Assets.xcassets in Resources */,
+				88FF74C21D43EE140026C10E /* coiny-regular.ttf in Resources */,
 				88FF74A01D43D0040026C10E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
