@@ -1,0 +1,6 @@
+framework module Pods_i_Vol {
+  umbrella header "Pods-i-Vol-umbrella.h"
+
+  export *
+  module * { export * }
+}

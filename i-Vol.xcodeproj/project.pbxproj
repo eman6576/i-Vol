@@ -19,9 +19,12 @@
 		88FF74BF1D43E1EA0026C10E /* Clan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FF74BE1D43E1EA0026C10E /* Clan.swift */; };
 		88FF74C21D43EE140026C10E /* coiny-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88FF74C01D43EE140026C10E /* coiny-regular.ttf */; };
 		88FF74C31D43EE140026C10E /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 88FF74C11D43EE140026C10E /* SIL Open Font License.txt */; };
+		D176E9CA32FCE7A7ACDF81E0 /* Pods_i_Vol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542327077DE5FABEADCF4E96 /* Pods_i_Vol.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E8258051ADCE9EA125308FB /* Pods-i-Vol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i-Vol.release.xcconfig"; path = "Pods/Target Support Files/Pods-i-Vol/Pods-i-Vol.release.xcconfig"; sourceTree = "<group>"; };
+		542327077DE5FABEADCF4E96 /* Pods_i_Vol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_i_Vol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FF74971D43D0040026C10E /* i-Vol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "i-Vol.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FF749A1D43D0040026C10E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88FF749C1D43D0040026C10E /* IVolLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IVolLoginViewController.swift; path = Controller/IVolLoginViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		88FF74BE1D43E1EA0026C10E /* Clan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Clan.swift; path = Model/Clan.swift; sourceTree = "<group>"; };
 		88FF74C01D43EE140026C10E /* coiny-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "coiny-regular.ttf"; path = "../../../AppAssets/i-Vol/fonts/coiny-regular.ttf"; sourceTree = "<group>"; };
 		88FF74C11D43EE140026C10E /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "SIL Open Font License.txt"; path = "../../../AppAssets/i-Vol/fonts/SIL Open Font License.txt"; sourceTree = "<group>"; };
+		96D478C296570C31B84530F1 /* Pods-i-Vol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-i-Vol.debug.xcconfig"; path = "Pods/Target Support Files/Pods-i-Vol/Pods-i-Vol.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D176E9CA32FCE7A7ACDF81E0 /* Pods_i_Vol.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,8 @@
 			children = (
 				88FF74991D43D0040026C10E /* i-Vol */,
 				88FF74981D43D0040026C10E /* Products */,
+				A860D5E19BEDFCD75730EA91 /* Pods */,
+				E8F8BBBC18D4CA46BAD47136 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +156,23 @@
 			name = Singletons;
 			sourceTree = "<group>";
 		};
+		A860D5E19BEDFCD75730EA91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96D478C296570C31B84530F1 /* Pods-i-Vol.debug.xcconfig */,
+				2E8258051ADCE9EA125308FB /* Pods-i-Vol.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E8F8BBBC18D4CA46BAD47136 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				542327077DE5FABEADCF4E96 /* Pods_i_Vol.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88FF74A91D43D0040026C10E /* Build configuration list for PBXNativeTarget "i-Vol" */;
 			buildPhases = (
+				86389729D0AE76B843FA4D80 /* 📦 Check Pods Manifest.lock */,
 				88FF74931D43D0040026C10E /* Sources */,
 				88FF74941D43D0040026C10E /* Frameworks */,
 				88FF74951D43D0040026C10E /* Resources */,
+				B3917597245B209B5AD3C6D9 /* 📦 Embed Pods Frameworks */,
+				F22E3A9AAD77D4F98108F5B7 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +243,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86389729D0AE76B843FA4D80 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3917597245B209B5AD3C6D9 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-i-Vol/Pods-i-Vol-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F22E3A9AAD77D4F98108F5B7 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-i-Vol/Pods-i-Vol-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88FF74931D43D0040026C10E /* Sources */ = {
@@ -341,6 +416,7 @@
 		};
 		88FF74AA1D43D0040026C10E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D478C296570C31B84530F1 /* Pods-i-Vol.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "i-Vol/Info.plist";
@@ -353,6 +429,7 @@
 		};
 		88FF74AB1D43D0040026C10E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E8258051ADCE9EA125308FB /* Pods-i-Vol.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "i-Vol/Info.plist";
@@ -382,6 +459,7 @@
 				88FF74AB1D43D0040026C10E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
